@@ -23,7 +23,7 @@ function User(name, email) {
 }
 
 function getTheThings(event) {
-  event.preventDefault();
+  // event.preventDefault();
   var user_name = event.target.user_name.value;
   var user_email = event.target.user_email.value;
   var newUser = new User(user_name, user_email);
@@ -241,13 +241,13 @@ function getUserName () {
     console.log (getUserNameData.name);
     document.getElementById('username').innerHTML = getUserNameData.name
     if (getUserNameData.netflix === true) {
-      document.getElementById('icons').innerHTML = '<img src="icons/netflix.jpg"/>'
+      document.getElementById('icons').innerHTML = '<a href="https://www.netflix.com/" target = "_blank"><img src="icons/netflix.jpg"/></a>'
     }
     if (getUserNameData.hulu === true) {
-      document.getElementById('icons2').innerHTML = '<img src="icons/hulu.jpg"/>'
+      document.getElementById('icons2').innerHTML = '<a href="http://www.hulu.com/welcome" target = "_blank"><img src="icons/hulu.jpg"/></a>'
     }
     if (getUserNameData.hboNow === true) {
-      document.getElementById('icons3').innerHTML = '<img src="icons/hbonow.png"/>'
+      document.getElementById('icons3').innerHTML = '<a href="https://order.hbonow.com/" target = "_blank"><img src="icons/hbonow.png"/></a>'
     }
   }
 };

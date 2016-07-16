@@ -83,10 +83,3 @@ label {
   width:200px;
   height: 50px;
 }
-#userNameDisplay {
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-flex-flow: row wrap;
-margin:30px;
-}
