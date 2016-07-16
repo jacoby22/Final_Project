@@ -154,3 +154,10 @@ label.pretty {
 #sceneItButton {
   display: none;
 }
+#userNameDisplay {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+flex-flow: row wrap;
+margin:30px;
+}

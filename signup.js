@@ -233,3 +233,22 @@ deleteIt.addEventListener('click', deleteSceneItMovie);
     }
   }
 })();
+function getUserName () {
+  if (localStorage.userProfile) {
+    console.log (localStorage.userProfile)
+    var getUserNameData = JSON.parse(localStorage.getItem('userProfile'));
+    console.log (getUserNameData);
+    console.log (getUserNameData.name);
+    document.getElementById('username').innerHTML = getUserNameData.name
+    if (getUserNameData.netflix === true) {
+      document.getElementById('icons').innerHTML = '<img src="icons/netflix.jpg"/>'
+    }
+    if (getUserNameData.hulu === true) {
+      document.getElementById('icons2').innerHTML = '<img src="icons/hulu.jpg"/>'
+    }
+    if (getUserNameData.hboNow === true) {
+      document.getElementById('icons3').innerHTML = '<img src="icons/hbonow.png"/>'
+    }
+  }
+};
+getUserName ();
