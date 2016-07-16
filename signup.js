@@ -23,7 +23,7 @@ function User(name, email) {
 }
 
 function getTheThings(event) {
-  event.preventDefault();
+  // event.preventDefault();
   var user_name = event.target.user_name.value;
   var user_email = event.target.user_email.value;
   var newUser = new User(user_name, user_email);
