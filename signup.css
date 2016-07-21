@@ -45,8 +45,6 @@ form {
   padding: 10px 20px;
   background: white;
   border-radius: 2%;
-  display: flex;
-  align-items: center;
 }
 
 h1 {
@@ -54,9 +52,6 @@ h1 {
   text-align: center;
 }
 
-h3 {
-  display: block;
-}
 
 /*img {
   margin-left: 10px;
@@ -96,14 +91,15 @@ legend {
   margin-bottom: 10px;
 }
 
-nav {
+/*nav {
+  background: dodgerblue;
   margin: 0;
-}
+}*/
 
 nav ul li {
   list-style-type: none;
   margin-top: 0;
-  color: black;
+  color: white;
 }
 
 select {
@@ -164,7 +160,7 @@ ul li a {
   position: relative;
   width: 100%;
   height: 100%;
-  /*margin-top: 300px;*/
+  margin-top: 300px;
 }
 
 #deleteButton {
@@ -181,13 +177,10 @@ ul li a {
 
 #kinostream {
   width: 300px;
-  height: 75px;
-  display: flex;
-  align-items: center;
+  height: 75px
 }
-#deleteSceneIt,
 #deleteButton,
-#sceneItButton {
+sceneItButton, {
   background:#5FB6E1;
   border:1px solid #F5F5F5;
   border-color:#5FB6E1;
@@ -198,11 +191,14 @@ ul li a {
   height:50px;
   margin:1px;
   padding:5px;
-  text-align: inherit;
-  width:100px;
-  display: flex;
-  margin: 20px auto;
-  /*border-color: #5FB6E1;
+  text-align:center;
+  width:200px;
+}
+
+
+
+#deleteSceneIt {
+  border-color: #5FB6E1;
   background: #5FB6E1;
   color: #fff;
   font-family: 'Varela Round', Helvetica, serif;
@@ -216,9 +212,6 @@ ul li a {
   border: 1px solid whitesmoke;
   color: #2C3238;
   align-items: center;
-  display: flex;
-  align-items: center;
-  margin:10px auto;*/
 }
 
 #kinostream {
@@ -235,11 +228,6 @@ ul li a {
 
 #watchListWrapper {
   margin-top: 0;
-  display: flex;
-  align-items: center;
-}
-
-#sceneItListSubmit {
   display: flex;
   align-items: center;
 }
@@ -269,7 +257,7 @@ a {
 
 /* nav link */
 nav a, nav a:visited {
-  color: black;
+  color: #fff;
 }
 
 /* selected nav link */
